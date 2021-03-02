@@ -11,6 +11,7 @@ public class Main {
             BufferedReader br = new BufferedReader(new FileReader("animals.csv"));
             String content = "";
             String nextLine = br.readLine();
+            nextLine = br.readLine();
             while (nextLine != null) {
                 String[] raw = nextLine.split(";");
                 Animal animal = new Animal();
@@ -24,8 +25,10 @@ public class Main {
                 arr.add(animal);
                 nextLine = br.readLine();
             }
+            for (int i = 0; i < arr.size(); i++) {
+                System.out.println(arr.get(i).id);
+            }
         } catch (IOException e) {
-            System.out.println("Idk anymore");
         }
     }
 }
