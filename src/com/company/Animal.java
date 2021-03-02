@@ -7,4 +7,5 @@ public class Animal {
     public int age;
     public String gender;
     public String isagresive;
+    public String isfriendly;
 }
